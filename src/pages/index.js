@@ -24,10 +24,10 @@ export default function IndexPage() {
           {/* <ServiceSection /> */}
           <Feature />
           <CoreFeature />
-          {/* <WorkFlow /> */}
+          <WorkFlow />
           <Package />
           <TeamSection />
-          <TestimonialCard />
+          {/* <TestimonialCard /> */}
         </Layout>
     </ThemeProvider>
   );
