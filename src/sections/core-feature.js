@@ -2,15 +2,15 @@
 import { jsx, Container, Box, Image } from 'theme-ui';
 import TextFeature from 'components/text-feature';
 
-import FeatureThumb from 'assets/core-feature.png';
+import FeatureThumb from 'assets/serviceaircon.png';
 import shapePattern from 'assets/shape-pattern2.png';
 
 const data = {
   subTitle: 'Core features',
-  title: 'Smart Jackpots that you may love this anytime & anywhere',
+  title: 'The services that our team provide:',
   description:
-    'Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.',
-  btnName: 'Get Started',
+    'A/C checking, A/C servicing, A/C repair, Fixing gas leaking problems, Heater restoration, Fan motor replacement, System installation, Heat pump adjustment, Duct cleaning and repairing, Chemical Overhaul',
+  btnName: '',
   btnURL: '#',
 };
 

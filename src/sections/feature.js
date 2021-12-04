@@ -12,10 +12,10 @@ const data = [
   {
     id: 1,
     imgSrc: Performance,
-    altText: 'Fast Performance',
-    title: 'Fast Performance',
+    altText: 'Cleaner air',
+    title: 'Cleaner air',
     text:
-      'Let’s just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world.',
+      '',
   },
   {
     id: 2,
@@ -48,8 +48,8 @@ export default function Feature() {
     <section sx={{ variant: "section.feature" }}>
     <Container>
       <SectionHeader
-        slogan="Quality Features"
-        title="Amazing useful features"
+        slogan=" "
+        title="Benefits For Contract Service"
       />
       <Grid sx={styles.grid}>
         {data.map((item) => (
