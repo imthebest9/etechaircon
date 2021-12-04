@@ -21,7 +21,7 @@ export default function IndexPage() {
           <SEO title="ETECH" />
           <Banner />
           <KeyFeature />
-          {/* <ServiceSection /> */}
+          <ServiceSection />
           {/* <Feature /> */}
           <CoreFeature />
           <WorkFlow />

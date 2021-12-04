@@ -15,31 +15,31 @@ import TextFeature from "components/text-feature";
 import ModalVideo from "react-modal-video";
 import { IoIosPlay } from "react-icons/io";
 
-import ServiceThumb from "assets/service-thumb.png";
+import ServiceThumb from "assets/service-thumb2.jpg";
 import shapePattern from "assets/shape-pattern1.png";
 
 import Smart from "assets/services/smart.svg";
 import Secure from "assets/services/secure.svg";
 
 const data = {
-  subTitle: "our services",
-  title: "Business Goals Achieved with Design",
+  subTitle: "EtechAircon",
+  title: "Providing the finest service",
   features: [
     {
       id: 1,
       imgSrc: Smart,
-      altText: "Smart Features",
-      title: "Smart Features",
+      altText: "",
+      title: "",
       text:
-        "Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.",
+        "",
     },
     {
       id: 2,
       imgSrc: Secure,
-      altText: "Secure Contents",
-      title: "Secure Contents",
+      altText: "",
+      title: "",
       text:
-        "Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.",
+        "",
     },
   ],
 };
@@ -92,7 +92,7 @@ export default function ServiceSection() {
       <ModalVideo
         channel="youtube"
         isOpen={videoOpen}
-        videoId="oxFr7we3LC8"
+        videoId="EdzlBKcdXhk"
         onClose={() => setVideoOpen(false)}
       />
     </section>
