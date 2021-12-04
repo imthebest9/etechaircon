@@ -6,6 +6,8 @@ import Logo from "components/logo";
 import LogoDark from "assets/logo.svg";
 import MobileDrawer from "./mobile-drawer";
 import menuItems from "./header.data";
+import styled from "styled-components";
+import { AiOutlineFacebook, AiOutlineWhatsApp } from "react-icons/ai";
 
 export default function Header({ className }) {
   return (
@@ -27,13 +29,12 @@ export default function Header({ className }) {
             </Link>
           ))}
         </Flex>
-        <Button
-          className="donate__btn"
-          variant="secondary"
-          aria-label="Get Started"
-        >
-          Get Started
-        </Button>
+        <SocialIcons href="https://www.facebook.com/profile.php?id=100057442029669">
+          <AiOutlineFacebook size="3rem" />
+        </SocialIcons>
+        <SocialIcons href="https://wa.link/qtbue9">
+          <AiOutlineWhatsApp size="3rem" />
+        </SocialIcons>
         <MobileDrawer />
       </Container>
     </header>
@@ -108,3 +109,14 @@ const styles = {
     },
   },
 };
+
+const SocialIcons = styled.a`
+  transition: 0.3s ease;
+  color: black;
+  border-radius: 50px;
+  padding: 8px;
+  &:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+`;
