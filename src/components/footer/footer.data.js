@@ -1,24 +1,12 @@
 export default {
   menuItem: [
     {
-      path: '/',
-      label: 'Home',
+      path: 'https://wa.link/qtbue9',
+      label: 'Contact (Whatsapp)',
     },
     {
-      path: '/',
-      label: 'Adversite',
-    },
-    {
-      path: '/',
-      label: 'Supports',
-    },
-    {
-      path: '/',
-      label: 'Marketing',
-    },
-    {
-      path: '/',
-      label: 'Contact',
+      path: 'https://www.facebook.com/profile.php?id=100057442029669',
+      label: 'Facebook page',
     },
   ],
 };
