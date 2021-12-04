@@ -20,6 +20,7 @@ import shapePattern from "assets/shape-pattern1.png";
 
 import Smart from "assets/services/smart.svg";
 import Secure from "assets/services/secure.svg";
+import Iframe from "react-iframe";
 
 const data = {
   subTitle: "EtechAircon",
@@ -30,16 +31,14 @@ const data = {
       imgSrc: Smart,
       altText: "",
       title: "",
-      text:
-        "",
+      text: "",
     },
     {
       id: 2,
       imgSrc: Secure,
       altText: "",
       title: "",
-      text:
-        "",
+      text: "",
     },
   ],
 };
@@ -54,7 +53,7 @@ export default function ServiceSection() {
   return (
     <section sx={{ variant: "section.services" }}>
       <Container sx={styles.containerBox}>
-        <Box sx={styles.thumbnail}>
+        {/* <Box sx={styles.thumbnail}>
           <Image src={ServiceThumb} alt="Thumbnail" />
           <Button
             sx={styles.videoBtn}
@@ -68,6 +67,17 @@ export default function ServiceSection() {
           <Box sx={styles.shapeBox}>
             <Image src={shapePattern} alt="shape" />
           </Box>
+        </Box> */}
+        <Box sx={styles.thumbnail}>
+          <Iframe
+            url="https://www.youtube.com/embed/EdzlBKcdXhk"
+            width="450px"
+            height="450px"
+            id="myId"
+            className="myClassname"
+            display="initial"
+            position="relative"
+          />
         </Box>
         <Box sx={styles.containerBox}>
           <TextFeature subTitle={data.subTitle} title={data.title} />
@@ -76,7 +86,7 @@ export default function ServiceSection() {
             {data.features.map((feature) => (
               <Box sx={styles.card} key={feature.id}>
                 <Image
-                  src={feature.imgSrc}
+                  // src={feature.imgSrc}
                   alt={feature.altText}
                   sx={styles.icon}
                 />
@@ -89,12 +99,12 @@ export default function ServiceSection() {
           </Grid>
         </Box>
       </Container>
-      <ModalVideo
+      {/* <ModalVideo
         channel="youtube"
         isOpen={videoOpen}
         videoId="EdzlBKcdXhk"
         onClose={() => setVideoOpen(false)}
-      />
+      /> */}
     </section>
   );
 }
