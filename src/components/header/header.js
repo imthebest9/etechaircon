@@ -65,7 +65,7 @@ const styles = {
     position: "absolute",
     top: 0,
     left: 0,
-    backgroundColor: "transparent",
+    backgroundColor: "#e1e4e8",
     transition: "all 0.4s ease",
     animation: `${positionAnim} 0.4s ease`,
     ".donate__btn": {
@@ -75,7 +75,7 @@ const styles = {
     },
     "&.sticky": {
       position: "fixed",
-      backgroundColor: "background",
+      backgroundColor: "#e1e4e8",
       color: "#000000",
       boxShadow: "0 1px 2px rgba(0, 0, 0, 0.06)",
       py: 3,

@@ -38,6 +38,7 @@ export default function Footer() {
 
 const styles = {
   footer: {
+    backgroundColor: "#e1e4e8",
     footerBottomArea: {
       borderTop: "1px solid",
       borderTopColor: "border_color",

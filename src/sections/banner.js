@@ -6,6 +6,7 @@ import ShapeLeft from "assets/shape-left.png";
 import ShapeRight from "assets/shape-right.png";
 import styled from "styled-components";
 import { AiOutlineFacebook, AiOutlineWhatsApp } from "react-icons/ai";
+import Logo from "assets/logo2.svg";
 
 export default function Banner() {
   return (
@@ -81,6 +82,7 @@ const styles = {
       mx: "auto",
       textAlign: "center",
       mb: ["40px", null, null, null, null, 7],
+      // backgroundImage: `url(${Logo})`,
     },
     imageBox: {
       justifyContent: "center",
