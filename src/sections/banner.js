@@ -2,6 +2,7 @@
 import { jsx } from "theme-ui";
 import { Container, Box, Heading, Text, Image, Button } from "theme-ui";
 import BannerImg from "assets/banner-thumb2.jpg";
+import BannerImg2 from "assets/banner-2ndthumb.jpg";
 import ShapeLeft from "assets/shape-left.png";
 import ShapeRight from "assets/shape-right.png";
 import styled from "styled-components";
@@ -33,6 +34,11 @@ export default function Banner() {
         </Box>
         <Box sx={styles.banner.imageBox}>
           <Image src={BannerImg} alt="banner" />
+        </Box>
+        <br />
+        <br />
+        <Box sx={styles.banner.imageBox}>
+          <Image src={BannerImg2} alt="banner2" />
         </Box>
       </Container>
     </section>
