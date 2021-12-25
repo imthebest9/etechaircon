@@ -2,7 +2,7 @@
 import { jsx, Container, Box, Image } from 'theme-ui';
 import TextFeature from 'components/text-feature';
 
-import FeatureThumb from 'assets/serviceaircon.png';
+import FeatureThumb from 'assets/serviceaircon2.png';
 import shapePattern from 'assets/shape-pattern2.png';
 
 const data = {
