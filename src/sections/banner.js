@@ -19,8 +19,8 @@ export default function Banner() {
           <Text as="p" variant="heroSecondary">
             At EtechAircon, we make sure our team executes their duty over and
             above in order to fulfill the needs of our customers. For more
-            information or general inquiries, visit our facebook page or
-            whatsapp us now!
+            information or general inquiries, click on the icons below to visit
+            our facebook page or whatsapp us now!
           </Text>
           <Box>
             <SocialIcons href="https://www.facebook.com/profile.php?id=100057442029669">
