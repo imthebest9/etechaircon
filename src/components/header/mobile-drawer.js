@@ -47,7 +47,7 @@ export default function MobileDrawer() {
       drawerStyle={styles.drawer}
       closeBtnStyle={styles.close}
     >
-      <Scrollbars autoHide>
+      {/* <Scrollbars autoHide>
         <Box sx={styles.content}>
           <Box sx={styles.menu}>
             {menuItems.map((menuItem, i) => (
@@ -74,7 +74,7 @@ export default function MobileDrawer() {
             </Box>
           </Box>
         </Box>
-      </Scrollbars>
+      </Scrollbars> */}
     </Drawer>
   );
 }

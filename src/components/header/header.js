@@ -13,7 +13,7 @@ export default function Header({ className }) {
   return (
     <header sx={styles.header} className={className} id="header">
       <Container sx={styles.container}>
-        <Logo src={LogoDark} />
+        <Logo src={LogoDark} sx={styles.logo} />
         <Flex as="nav" sx={styles.nav}>
           {menuItems.map((menuItem, i) => (
             <Link
@@ -29,13 +29,15 @@ export default function Header({ className }) {
             </Link>
           ))}
         </Flex>
-        <SocialIcons href="https://www.facebook.com/profile.php?id=100057442029669">
-          <AiOutlineFacebook size="3rem" />
-        </SocialIcons>
-        <SocialIcons href="https://wa.link/qtbue9">
-          <AiOutlineWhatsApp size="3rem" />
-        </SocialIcons>
-        <MobileDrawer />
+        <Flex sx={styles.icons}>
+          <SocialIcons href="https://www.facebook.com/profile.php?id=100057442029669">
+            <AiOutlineFacebook size="3rem" />
+          </SocialIcons>
+          <SocialIcons href="https://wa.link/qtbue9">
+            <AiOutlineWhatsApp size="3rem" />
+          </SocialIcons>
+        </Flex>
+        {/* <MobileDrawer /> */}
       </Container>
     </header>
   );
@@ -107,6 +109,19 @@ const styles = {
         color: "primary",
       },
     },
+  },
+  icons: {
+    display: "none",
+    "@media screen and (min-width: 1024px)": {
+      display: "block",
+    },
+    mx:"auto"
+  },
+  logo: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    mx:"auto"
   },
 };
 

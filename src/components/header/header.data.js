@@ -5,14 +5,14 @@ export default [
   },
   {
     path: 'feature',
-    label: 'Features',
+    label: 'Services',
   },
   {
-    path: 'pricing',
-    label: 'Pricing',
+    path: 'service',
+    label: 'Process',
   },
   {
-    path: 'team',
-    label: 'Our Team',
+    path: 'corefeature',
+    label: 'Core features',
   },
 ];

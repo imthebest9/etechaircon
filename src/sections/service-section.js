@@ -51,7 +51,7 @@ export default function ServiceSection() {
     setVideoOpen(true);
   };
   return (
-    <section sx={{ variant: "section.services" }}>
+    <section sx={{ variant: "section.services" }} id="service">
       <Container sx={styles.containerBox}>
         {/* <Box sx={styles.thumbnail}>
           <Image src={ServiceThumb} alt="Thumbnail" />
@@ -71,7 +71,7 @@ export default function ServiceSection() {
         <Box sx={styles.thumbnail}>
           <Iframe
             url="https://www.youtube.com/embed/EdzlBKcdXhk"
-            width="450px"
+            width="320px"
             height="450px"
             id="myId"
             className="myClassname"
