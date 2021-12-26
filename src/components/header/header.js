@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Container, Flex, Button } from "theme-ui";
+import { jsx, Container, Flex, Button, Image } from "theme-ui";
 import { keyframes } from "@emotion/core";
 import { Link } from "react-scroll";
 import Logo from "components/logo";
@@ -7,7 +7,8 @@ import LogoDark from "assets/logo.svg";
 import MobileDrawer from "./mobile-drawer";
 import menuItems from "./header.data";
 import styled from "styled-components";
-import { AiOutlineFacebook, AiOutlineWhatsApp } from "react-icons/ai";
+import WhatsappLogo from "assets/sociallogo-03.png";
+import FacebookLogo from "assets/sociallogo-04.png";
 
 export default function Header({ className }) {
   return (
@@ -31,10 +32,10 @@ export default function Header({ className }) {
         </Flex>
         <Flex sx={styles.icons}>
           <SocialIcons href="https://www.facebook.com/profile.php?id=100057442029669">
-            <AiOutlineFacebook size="3rem" />
+            <Image src={FacebookLogo} alt="facebooklogo" />
           </SocialIcons>
           <SocialIcons href="https://wa.link/qtbue9">
-            <AiOutlineWhatsApp size="3rem" />
+            <Image src={WhatsappLogo} alt="whatsapplogo" />
           </SocialIcons>
         </Flex>
         {/* <MobileDrawer /> */}
@@ -115,13 +116,13 @@ const styles = {
     "@media screen and (min-width: 1024px)": {
       display: "block",
     },
-    mx:"auto"
+    mx: "auto",
   },
   logo: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    mx:"auto"
+    mx: "auto",
   },
 };
 

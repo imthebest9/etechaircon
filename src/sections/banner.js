@@ -7,7 +7,8 @@ import ShapeLeft from "assets/shape-left.png";
 import ShapeRight from "assets/shape-right.png";
 import styled from "styled-components";
 import { AiOutlineFacebook, AiOutlineWhatsApp } from "react-icons/ai";
-import Logo from "assets/logo2.svg";
+import WhatsappLogo from "assets/whatsapp-logo.png";
+import FacebookLogo from "assets/facebook-logo-02.png";
 
 export default function Banner() {
   return (
@@ -20,15 +21,19 @@ export default function Banner() {
           <Text as="p" variant="heroSecondary">
             At EtechAircon, we make sure our team executes their duty over and
             above in order to fulfill the needs of our customers. For more
-            information or general inquiries, click on the icons below to visit
-            our facebook page or whatsapp us now!
+            information or general inquiries,
+            <b>
+              {" "}
+              click on the icons below to visit our facebook page or whatsapp us
+              now!
+            </b>
           </Text>
           <Box>
             <SocialIcons href="https://www.facebook.com/profile.php?id=100057442029669">
-              <AiOutlineFacebook size="6rem" />
+              <Image src={FacebookLogo} alt="facebooklogo" />
             </SocialIcons>
-            <SocialIcons href="https://wa.link/qtbue9">
-              <AiOutlineWhatsApp size="6rem" />
+            <SocialIcons href="https://wa.link/qtbue9" target="_blank">
+              <Image src={WhatsappLogo} alt="whatsapplogo" />
             </SocialIcons>
           </Box>
         </Box>
@@ -88,7 +93,6 @@ const styles = {
       mx: "auto",
       textAlign: "center",
       mb: ["40px", null, null, null, null, 7],
-      // backgroundImage: `url(${Logo})`,
     },
     imageBox: {
       justifyContent: "center",
